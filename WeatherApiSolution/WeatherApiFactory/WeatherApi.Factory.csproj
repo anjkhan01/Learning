@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>.\..\SharedLibraries\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenWeatherMapApi">
+      <HintPath>..\SharedLibraries\netcoreapp2.1\OpenWeatherMapApi.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenWeatherMapExternalApi">
+      <HintPath>..\SharedLibraries\netcoreapp2.1\OpenWeatherMapExternalApi.dll</HintPath>
+    </Reference>
+    <Reference Include="WeatherApi.Common">
+      <HintPath>..\SharedLibraries\netcoreapp2.1\WeatherApi.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
